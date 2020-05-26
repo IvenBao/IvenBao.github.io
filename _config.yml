@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: 🤛Iven🤜
+subtitle: '白天努力集满阳光，夜晚用力照亮前路 🌈'
+description: 'Iven的个人博客，emmmmm～，因为想要有一个地方能够跟大家一起分享我在工作中生活中遇见的一些事，想通过我的博客能够遇到那些兴趣爱好，理念意志相投的朋友。'
+keywords: '生活,code,工作,社会见闻,购物羊毛,宠物,IT技术'
+author: ivenBao
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -18,23 +18,24 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+source_dir: source #资源文件夹，这个文件夹用来存放内容。
+public_dir: public #公共文件夹，这个文件夹用于存放生成的站点文件。
+tag_dir: tags #标签文件夹
+archive_dir: archives #归档文件夹
+category_dir: categories #分类文件夹
+code_dir: downloads/code #Include code 文件夹，source_dir 下的子目录
+i18n_dir: :lang #国际化（i18n）文件夹
+skip_render: #跳过指定文件的渲染。匹配到的文件将会被"不做改动地复制"到 public 目录中。您可使用 glob 表达式来匹配路径。
 
 # Writing
 new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
+default_layout: post # 新建一篇文章:$ hexo new [layout] <title> 如果没有设置 layout 的话，默认用 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。
+auto_spacing: true # 在中文和英文之间加入空格
+titlecase: true # 把标题转换为 title case
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
@@ -48,7 +49,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: '4'
   wrap: true
   hljs: false
 
@@ -77,7 +78,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+use_date_for_updated: true
 
 # Pagination
 ## Set per_page to 0 to disable pagination

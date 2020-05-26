@@ -13,7 +13,7 @@
 #---------------------------
 favicon: /img/favicon.png # 网站标签页的 icon
 
-apple_touch_icon: /img/apple-touch-icon.png # 用于苹果设备的 icon
+apple_touch_icon: /img/favicon.png # 用于苹果设备的 icon
 
 title_join_string: ' - '  # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 
@@ -22,7 +22,7 @@ force_https: false  # 强制所有链接升级为 HTTPS（适用于图片等资�
 highlight: # 代码高亮
   enable: true
   style: 'Github Gist'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
-  bg_color: false  # 是否根据 style 改变代码背景色，如果 style 是白色背景最好关闭此项
+  bg_color: false  # 是否根据 style 改变代码背景色，**如果 style 是深色背景别忘了开启此项**
   copy_btn: true  # 是否开启复制代码的按钮
 
 fun_features: # 一些好玩的功能
@@ -92,8 +92,8 @@ aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
     - { name: 'name', artist: 'artist', url: '/songs/test.mp3', cover: '/img/cover.jpg' }
     - { name: 'name', artist: 'artist', url: 'https://...url.mp3', cover: 'https://...cover.jpg' }
 
-version:  # 版本相关
-  check: true  # 每次生成检测是否为最新版本
+version:  # 主题版本相关
+  check: false  # 每次生成页面后，检测主题是否为最新版本
 
 #---------------------------
 # 页头
@@ -101,6 +101,10 @@ version:  # 版本相关
 #---------------------------
 navbar:
   blog_title: Fluid # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  ground_glass:  # 导航栏毛玻璃特效，部分浏览器不支持会自动不生效
+    enable: true
+    px: 3  # 模糊像素，只能为数字，数字越大模糊度越高
+    alpha: 0.7   # 透明度，只能为数字，范围0~1，数字越大透明度越低，注意透明过度可能看不清菜单字体
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
@@ -109,7 +113,7 @@ navbar:
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
     #- { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
 
-search: # 搜索栏
+search: # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件。
   enable: true
   path: /local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
   generate_path: /local-search.xml # 文件生成位置，必须为相对位置
@@ -203,7 +207,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     collapseDepth: 0  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
   copyright:  # 版权声明
     enable: true
-    content: '本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！'
+    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！'
   prev_next:  # 文章底部上一篇下一篇功能
     enable: true
   custom:  # 文章底部自定义内容
@@ -309,6 +313,8 @@ category:
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
+  post_limit: 10  # 单个分类中折叠展示文章数的最大值，超过限制会显示 More
+  order_by: '-length'  # 排序字段，前面带减号是倒序，不带减号是正序，可选项：name | length
 
 #---------------------------
 # 标签归档页
@@ -338,8 +344,8 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   subtitle:  # 打字机内容
   avatar: /img/avatar.png # 头像
   name: myname
-  introduce: info / info / info # 支持 HTML
-  icons: # 更多图标可从 https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/iconfont.png 查找，class 代表图标的 css class
+  introduce: '一句简短的介绍' # 支持 HTML
+  icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class
     - { class: 'iconfont icon-github-fill', link: 'https://github.com' }
     - { class: 'iconfont icon-douban-fill', link: 'https://douban.com' }
     - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image

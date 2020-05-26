@@ -63,12 +63,13 @@ $ hexo new page about
 修改后的文件示例如下：
 
 ```yml
+---
 title: about
 date: 2020-02-23 19:20:33
 layout: about
 ---
 
-这里写正文，支持 Markdown, HTML
+这里写关于页的正文，支持 Markdown, HTML
 ```
 
 ## 升级主题
@@ -103,17 +104,27 @@ layout: about
 
 如你也想贡献代码，可参照[贡献指南](https://hexo.fluid-dev.com/docs/contribute/)
 
-## 反馈
+## 社区
 
-微信群：扫描后添加好友，**回复「fluid」**（在聊天回复，不是加好友验证）自动拉群
+微信群：扫描二维码添加好友进交流群
 
-<details><summary>二维码</summary><img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.jpeg" alt="wechat"></details>
+<details>
+    <summary>二维码</summary>
+    <p><b>好友申请备注：fluid</b></p>
+    <p><b>提问之前请先仔细查阅用户文档</b></p>
+    <img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png" alt="wechat">
+</details>
 
-## 赞赏
+## 赞助
 
 你可以通过下方二维码赞助本项目，资金将用于服务器开销以及今后的公共接口服务
 
-<details><summary>二维码</summary><img width="600" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/reward.png" alt="reward"></details>
+<details>
+    <summary>二维码</summary>
+    <img width="600" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/sponsor.png" alt="sponsor">
+</details>
+
+其他商业赞助可发送邮件至 zkqiang#126.com (#替换为@)
 
 ## Star 趋势
 
