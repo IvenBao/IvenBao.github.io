@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>第一篇文章</title>
+    <url>/2020/05/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h1 id="第一篇文章"><a href="#第一篇文章" class="headerlink" title="第一篇文章"></a>第一篇文章</h1><p>先写点字试试效果</p>
+<h2 id="二级标签"><a href="#二级标签" class="headerlink" title="二级标签"></a>二级标签</h2><p>看看二级标签下的效果</p>
+<h3 id="知识点记录"><a href="#知识点记录" class="headerlink" title="知识点记录"></a>知识点记录</h3><p>三级标签知识点记录</p>
+<h4 id="四级标签"><a href="#四级标签" class="headerlink" title="四级标签"></a>四级标签</h4><p>先粗略的写几个主题的博客文章试试看，等深入后再编写几个模版通过这个模版来填写博客的结构提交好了</p>
+<pre><code class="hljs javascript"><span class="hljs-comment">// 试试js代码块的效果</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;
+  data:&#123;
+    <span class="hljs-keyword">return</span>:&#123;
+      aa:<span class="hljs-string">'测试吧'</span>
+    &#125;
+  &#125;
+&#125;</code></pre>]]></content>
+      <tags>
+        <tag>life</tag>
+        <tag>你好</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/05/06/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>

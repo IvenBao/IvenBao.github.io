@@ -1,20 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>🤛Iven🤜</title>
   
-  
+  <subtitle>白天努力集满阳光，夜晚用力照亮前路 🌈</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-06T06:49:18.285Z</updated>
+  <updated>2020-05-22T02:35:36.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>ivenBao</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://yoursite.com/2020/05/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2020/05/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
+    <published>2020-05-22T02:35:36.000Z</published>
+    <updated>2020-05-22T02:35:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一篇文章"><a href="#第一篇文章" class="headerlink" title="第一篇文章"></a>第一篇文章</h1><p>先写点字试试效果</p><h2 id="二级标签"><a href="#二级标签" class="headerlink" title="二级标签"></a>二级标签</h2><p>看看二级标签下的效果</p><h3 id="知识点记录"><a href="#知识点记录" class="headerlink" title="知识点记录"></a>知识点记录</h3><p>三级标签知识点记录</p><h4 id="四级标签"><a href="#四级标签" class="headerlink" title="四级标签"></a>四级标签</h4><p>先粗略的写几个主题的博客文章试试看，等深入后再编写几个模版通过这个模版来填写博客的结构提交好了</p><pre><code class="hljs javascript"><span class="hljs-comment">// 试试js代码块的效果</span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;  data:&#123;    <span class="hljs-keyword">return</span>:&#123;      aa:<span class="hljs-string">'测试吧'</span>    &#125;  &#125;&#125;</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第一篇文章&quot;&gt;&lt;a href=&quot;#第一篇文章&quot; class=&quot;headerlink&quot; title=&quot;第一篇文章&quot;&gt;&lt;/a&gt;第一篇文章&lt;/h1&gt;&lt;p&gt;先写点字试试效果&lt;/p&gt;
+&lt;h2 id=&quot;二级标签&quot;&gt;&lt;a href=&quot;#二级标签&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+    
+    
+      <category term="life" scheme="http://yoursite.com/tags/life/"/>
+    
+      <category term="你好" scheme="http://yoursite.com/tags/%E4%BD%A0%E5%A5%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
