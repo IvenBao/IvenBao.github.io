@@ -34,7 +34,7 @@
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
     "lunr": "github:mamboer/lunr.js",
-    "moment": "^2.25.3",
+    "moment": "^2.29.4",
     "node-sass": "^4.14.1",
     "object-assign": "^4.1.1"
   }
